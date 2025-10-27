@@ -1,4 +1,11 @@
-# Apache Log Streaming dengan Kafka
+# 🚀 Kafka Stream - Apache Log Real-time Monitoring
+
+[![Docker](https://img.shields.io/badge/Docker-Compose-blue.svg)](https://www.docker.com/)
+[![Kafka](https://img.shields.io/badge/Apache-Kafka-red.svg)](https://kafka.apache.org/)
+[![Python](https://img.shields.io/badge/Python-3.11-green.svg)](https://www.python.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-3k0sakti%2Fkafka-black.svg)](https://github.com/3k0sakti/kafka)
+
+Implementasi lengkap **real-time streaming Apache access logs** menggunakan Apache Kafka dengan Docker.
 
 ## 📋 Overview
 
@@ -7,7 +14,18 @@ Project ini mengimplementasikan real-time streaming Apache access logs menggunak
 1. **Apache Web Server** - Generate access logs
 2. **Kafka Producer** (Docker 1) - Membaca Apache logs secara real-time dan mengirim ke Kafka
 3. **Kafka Consumer** (Docker 2) - Membaca dari Kafka dan print line per line
-4. **Traffic Generator** - Generate HTTP traffic untuk testing
+4. **Local Python Consumers** - 3 versi consumer untuk komputer lokal (simple/full/custom)
+5. **Traffic Generator** - Generate HTTP traffic untuk testing
+
+## 🎯 Key Features
+
+✅ Real-time log streaming dengan Kafka
+✅ Separate Docker containers (Producer & Consumer)
+✅ Line-by-line data processing
+✅ Multiple consumer options (Docker + Local Python)
+✅ Auto traffic generation
+✅ Complete troubleshooting tools
+✅ Production-ready with health checks
 
 ## 🏗️ Architecture
 
